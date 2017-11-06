@@ -52,7 +52,11 @@ It also has our controller inheriting from ActionController::API base instead of
   ```Ruby
   get '/songs', to: 'songs#index', as: 'songs'
   ```
-- **Create a controller method**
+- **Create a new controller**
+  ```Ruby
+    rails g controller songs
+  ```
+ - **Create a controller method**
   ```Ruby
     def index
       songs = Song.all
